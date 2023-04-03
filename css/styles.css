@@ -1,0 +1,279 @@
+/*Paleta de colores 
+#8C1F28, #591C21, #044040, #D92525
+****************************
+*/
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Source Sans Pro', sans-serif;
+    box-sizing: border-box;
+    list-style: none;
+}
+
+body{
+    height: 100vh;
+}
+
+.container_header{
+    width: 100%;
+    height: 41%;
+    background: #591C21;
+    background-image: linear-gradient(10deg, #591c21c9, #044040b4, #d9252583 )
+    ,url(../img/pexels-pixabay.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    padding: 0.1px;
+}
+
+.menu{
+    text-align: right;
+    margin-right: 2%;
+    margin-top: 1%;
+}
+
+.menu a{
+    color: #fff;
+    text-decoration: none;   
+}
+hr{
+    border-color: #8c1f2893;
+}
+.menu > li{
+    display: inline-block;
+    padding: 1.2% 2.2%;
+    background-color: #D92525;
+    margin-top: 1%;
+    margin-bottom: 2%;
+    border-radius: 10px;
+    color: #fff;
+    font-size: 22px;
+}
+
+.menu >li:hover{
+    background-color: #044040;
+    border: 2px solid #8c1f2893;
+}
+
+.menu .btn_contacto{
+    background-color: #044040;
+    border: 3px solid #8c1f2893;
+}
+.title{
+    text-align: center;
+    font-size: 4em;
+    margin: 1%;
+    color: #fff
+}
+
+.fm_contact{
+    width: 45%;
+    height: auto;
+    margin: 2% auto;
+    border: 5px solid #044040;
+    border-radius: 10px;
+    padding: 2% 1%;
+    text-align: center;
+}
+.fm_contact > hr{
+    margin-bottom: 3%;
+}
+.title_form{
+    margin: 2% 0;
+    text-align: center;
+    color: #d9252583;
+}
+.fm_contact > input, label, button{
+    display: inline-block;
+    width: 80%;
+    margin: 1% 0;
+    font-size: 22px;
+}
+.fm_contact > input, .msn{
+    padding: 10px 2px;
+    border: none;
+    border-bottom: 2px solid #044040;
+    outline: none;
+    background-color: #fce3e371;
+}
+.msn{
+    width: 80%;
+}
+.fm_contact > label{
+    text-align: left;
+    padding: 5px;
+}
+
+input:focus, .msn:focus{
+    border-bottom: none;
+    border-right: 2px solid #044040;
+    background-color: #918787cb;
+} 
+
+.btn_enviar, .btnRegistrar, .btnCancelar{
+    width: 30%;
+    margin-top: 3%;
+    padding: 10px 20px;
+    background-color: #D92525;
+    border-radius: 10px;
+    font-size: 20px;
+    border: solid #D92525 2px;
+    color: #fff;    
+}
+
+.btn_enviar:hover{
+    background-color: #044040;
+    text-decoration: underline;
+}
+
+.footer{
+    width: 100vw;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: baseline;
+    background-image: linear-gradient(10deg, #044040 60%, #D92525, #8c1f2893);
+}
+.foot{
+    display: inline;
+    margin: 3%;
+    text-align: center;
+}
+.copy{
+    width: 30%;
+    height: auto;
+    color: #fff;
+    line-height: 40px; /*Es el espacio vertical de los elementos*/
+}
+.my_nets, .map{
+    width: 30%;
+    height: auto;
+}
+
+.title_about, .title_nets,.title_ubi{
+    color: #fff;
+    margin-bottom: 3%;
+    padding: 1%;
+}
+.social_net > li{
+    padding: 1%;
+}
+.nets{
+    width: 8%;
+}
+
+.foot > iframe{
+    width: 100%;
+    height: auto;
+    border: 0;
+}
+
+.credits{
+    width: 100%;
+    padding: 2%;
+    background-color: #591C21;
+    text-align: right;
+    color: #fff;
+}
+.credits > a{
+    color: #fff;
+    text-decoration: none;
+}
+
+.card{
+    width: 60%;
+    margin: 5% auto;
+    border: 2px solid #402319;
+    background-color: #F2F2F2;
+    text-align: center;
+   
+  }
+  .title-card{
+    font-size: 24px;
+    padding: 2%;
+  }
+  .data-card, .text-mail, .text-msn{
+    font-size: 20px;
+    color: #402319;
+    padding: 1% 0;
+  }  
+  .text-telefono{
+    font-size: 22px;
+    padding: 2% 0;
+  }
+  .btnRegistrar:hover, .btnCancelar:hover{
+    background: #BF0F30;    
+    text-decoration:underline;
+  }
+  .alerta{
+    width: 30%;
+    height: auto;  
+    background: #BF0F30;  
+    position: fixed;
+    top: calc(100vh - 65%);
+    left:  calc(100vw - 65%);
+    text-align: center;    
+    border: 2px solid #402319;
+    padding: 5px;
+  }  
+  .textAlerta{
+    width: 100%;
+    margin-top: 12%;
+    margin-bottom: 10%;
+    color: aliceblue;
+    font-size: 20px;
+  }
+  .btnAlerta{
+    width: 40%;
+    height: auto;  
+    margin-right: 1% ;
+    margin-bottom: 3%;
+    background: #402319;  
+    border: none;
+    border-radius: 8px;    
+    font-size: 14px;
+    color: #F2F2F2;
+    padding: 2%;
+  }
+  .is-valid {
+    border-bottom: 2px solid #06a006a9 !important;
+  
+  }
+  
+  .is-invalid {
+    border-bottom: 2px solid #ac0601 !important;
+  
+  }
+  .select{
+    display: inline-block;
+       width: 80%;
+       margin: 1% 0;
+       font-size: 22px;
+   }
+
+   .cardEstudiante{
+    background-image: linear-gradient( #044040de, #d92525da );
+    margin: 0 auto;
+    margin: 10% 20%;
+    padding: 5%;
+   }
+   .cardEstudiante h3, h4, p{
+    text-align: center;
+    color: #f3ededfa !important;
+
+   }
+   .cardProfesor{
+    background-image: linear-gradient(#d92525da, #044040de);
+    margin: 0 auto;
+    margin: 10% 20%;
+    padding: 5%;
+}
+.cardProfesor h3, h4, p{
+    text-align: center;
+    color: #f3ededfa !important;
+
+   }
